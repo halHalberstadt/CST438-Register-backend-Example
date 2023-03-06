@@ -44,6 +44,11 @@ public class ScheduleController {
 	
 	
 	/*
+	 * TODO URI's For example
+	 */
+	
+	
+	/*
 	 * get current schedule for student.
 	 */
 	@GetMapping("/schedule")
