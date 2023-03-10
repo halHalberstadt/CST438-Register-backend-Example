@@ -44,9 +44,14 @@ public class ScheduleController {
 	
 	
 	/*
-	 * TODO URI's For example
+	 * return example data to make sure all parts are connected.
 	 */
-	
+	@GetMapping("/allStudents")
+	public String getAllStudents() {
+		System.out.println("getAllStudents called");
+		Iterable<Student> allStudents = studentRepository.findAll();
+		return allStudents.toString();
+	}
 	
 	/*
 	 * get current schedule for student.

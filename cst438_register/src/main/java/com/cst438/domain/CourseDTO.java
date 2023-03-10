@@ -2,7 +2,7 @@ package com.cst438.domain;
 
 import java.util.List;
 
-public class CourseDTOG {
+public class CourseDTO {
 
 	public static class GradeDTO {
 		public String student_email;

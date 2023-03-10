@@ -7,10 +7,10 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.cst438.domain.CourseDTOG;
 import com.cst438.domain.Enrollment;
 import com.cst438.domain.EnrollmentDTO;
 import com.cst438.domain.EnrollmentRepository;
+import com.cst438.domain.ScheduleDTO.CourseDTO;
 
 
 public class GradebookServiceMQ extends GradebookService {
@@ -41,7 +41,7 @@ public class GradebookServiceMQ extends GradebookService {
 	}
 	
 	@RabbitListener(queues = "registration-queue")
-	public void receive(CourseDTOG courseDTOG) {
+	public void receive(CourseDTO courseDTOG) {
 		System.out.println("Receive enrollment :" + courseDTOG);
 
 		//TODO 
