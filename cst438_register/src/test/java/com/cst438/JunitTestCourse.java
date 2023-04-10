@@ -49,6 +49,7 @@ public class JunitTestCourse {
 	public static final String TEST_INSTRUCTOR = "Isee@but.why";
 	public static final String TEST_ROOM = "outside";
 	public static final String TEST_BUILDING = "TBA";
+	// comment added
 
 	@MockBean
 	CourseRepository courseRepository;
